@@ -1,0 +1,32 @@
+source ~/.basevimrc
+
+set number relativenumber
+
+noremap <leader>so :so ~/.vsvimrc<CR>
+
+noremap <leader>/ :vsc Edit.ToggleLineComment <CR>
+noremap <leader>kd :vsc format <CR>
+"noremap <leader>qq :vsc CloseAll <CR>
+noremap <leader>Q :vsc CloseAll <CR>
+
+" Go to implementation
+noremap <leader>g :vsc Edit.GoToImplementation<CR>
+
+" Search
+noremap <leader>f :vsc Edit.GoToFile<CR> 
+noremap <leader>m :vsc Edit.GoToMember<CR> 
+
+" Toggle selection comment
+noremap <leader>rr :vsc Refactor.Rename <CR>
+vmap gc :vsc Edit.ToggleLineComment <CR>
+
+" Build solution
+noremap <leader>B :vsc Build.BuildSolution <CR>
+noremap <leader>BB :vsc Build.RebuildSolution <CR>
+noremap <leader>b :vsc Build.BuildSelection <CR>
+noremap <leader>bb :vsc Build.RebuildSelection <CR>
+
+" Easy motion
+noremap <leader><leader>w :vsc Tools.InvokePeasyMotion<CR>
+noremap <leader><leader>l :vsc Tools.InvokePeasyMotionJumpToLineBegining<CR>
+noremap <leader><leader>v :vsc Tools.InvokePeasyMotionTextSelect<CR>
