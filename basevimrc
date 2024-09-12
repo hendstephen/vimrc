@@ -60,12 +60,12 @@ vnoremap <leader>y  "+y
 noremap <leader>a ggVG
 
 " Append ; to end of line
-noremap <leader>; V:s/;\?$/;/<CR>
-inoremap ;; <esc>V:s/;\?$/;/<CR>A
+noremap <leader>; :s/;\?$/;/<CR>
+inoremap ;; <esc>:s/;\?$/;/<CR>A
 
 " Append .ConfigureAwait(false) to end of line
-noremap <leader>ca V:s/;\?$/.ConfigureAwait(false);/<CR>
-inoremap ca; <esc>V:s/;\?$/.ConfigureAwait(false);/<CR>A
+noremap <leader>ca :s/;\?$/.ConfigureAwait(false);/<CR>
+inoremap ca; <esc>:s/;\?$/.ConfigureAwait(false);/<CR>A
 
 " Jump outside any parentheses or quotes:
 inoremap jj <Esc>/[)}"'>]<CR>:nohl<CR>a
