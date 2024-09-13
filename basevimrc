@@ -5,8 +5,8 @@ set ignorecase
 
 " Leader key combos
 let mapleader=" "
-noremap <leader>w :w <CR>
-noremap <leader>q :q <CR>
+noremap <leader>w :w<CR>
+noremap <leader>q :q<CR>
 noremap <leader><leader> ``
 
 " Search and replace
@@ -22,8 +22,8 @@ nnoremap <S-n> Nzz
 inoremap jk <Esc>
 
 " Split panes
-noremap <leader>v :vsplit <CR>
-noremap <leader>s :split <CR>
+noremap <leader>v :vsplit CR>
+noremap <leader>s :split<CR>
 
 " Navigate panes
 noremap <C-left> <C-w><C-h>
