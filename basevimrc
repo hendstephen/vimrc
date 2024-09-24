@@ -22,7 +22,7 @@ nnoremap <S-n> Nzz
 inoremap jk <Esc>
 
 " Split panes
-noremap <leader>v :vsplit CR>
+noremap <leader>v :vsplit <CR>
 noremap <leader>s :split<CR>
 
 " Navigate panes
