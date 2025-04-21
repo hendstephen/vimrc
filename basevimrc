@@ -75,6 +75,9 @@ inoremap ;; <esc>:s/;\?$/;/<CR>A
 noremap <leader>ca :s/;\?$/.ConfigureAwait(false);/<CR>
 inoremap ca; <esc>:s/;\?$/.ConfigureAwait(false);/<CR>A
 
+" const
+inoremap cn<space> const 
+
 " Jump outside any parentheses or quotes:
 inoremap jj <Esc>/[)}"'>]<CR>:nohl<CR>a
 
