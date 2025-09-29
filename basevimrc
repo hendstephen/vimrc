@@ -68,8 +68,10 @@ vnoremap <leader>C "+C
 noremap <leader>a ggVG
 
 " Append ; to end of line
-noremap <leader>; :s/;\?$/;/<CR>
-inoremap ;; <esc>:s/;\?$/;/<CR>A
+"noremap <leader>; :s/;\?$/;/<CR>
+"inoremap ;; <esc>:s/;\?$/;/<CR>A
+noremap <leader>; mzA;<esc>`z
+inoremap ;; <esc>A;
 
 " Append .ConfigureAwait(false) to end of line
 noremap <leader>ca :s/;\?$/.ConfigureAwait(false);/<CR>
