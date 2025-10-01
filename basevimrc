@@ -77,6 +77,9 @@ inoremap ;; <esc>A;
 noremap <leader>ca :s/;\?$/.ConfigureAwait(false);/<CR>
 inoremap ca; <esc>:s/;\?$/.ConfigureAwait(false);/<CR>A
 
+" Exit insert mode and save
+inoremap ww <esc>:w<cr>
+
 " const
 inoremap cn<space> const 
 
