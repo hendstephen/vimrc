@@ -70,7 +70,7 @@ noremap <leader>a ggVG
 " Append ; to end of line
 "noremap <leader>; :s/;\?$/;/<CR>
 "inoremap ;; <esc>:s/;\?$/;/<CR>A
-noremap <leader>; mzA;<esc>`z
+noremap <leader>; mzA;<esc>`z:delm z<CR>
 inoremap ;; <esc>A;
 
 " Append .ConfigureAwait(false) to end of line
